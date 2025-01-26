@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(227, 227, 227);
+}
+
+.table {
+  box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.table p {
+  margin: 30px;
+  margin-bottom: 20px;
+  background-color: red;
+  padding: 3px;
+  width: 100px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 5px;
+  color: white;
+}
+
+.penjelasan {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.penjelasan h5 {
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+
+.spec {
+  margin: 30px;
+  margin-bottom: 60px;
+}
+.spec ul li span {
+  color: #b3b3b3;
+}
+.spec ul {
+  list-style-type: none;
+}
+
+.spec ul li {
+  margin-top: 15px;
+}
+
+.spec ul li b {
+  float: right;
+}
+
+.harga {
+  text-align: center;
+}
+
+.harga .dolar-symbol {
+  font-size: 25px;
+}
+
+.harga .bulanan {
+  font-size: 25px;
+}
+
+.harga .angka-harga {
+  font-size: 60px;
+}
+
+.table .tombol {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.tombol a input {
+  padding: 15px 90px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.tombol a input:hover {
+  opacity: 1;
+  transition: all;
+  transition-duration: 400ms;
+}
+
+/* warna tiap table */
+
+.purple p {
+  background-color: rgba(128, 0, 128, 0.321);
+  color: purple;
+}
+
+.purple .dolar-symbol {
+  color: purple;
+}
+
+.purple .angka-harga {
+  color: purple;
+}
+
+.purple a input {
+  background-color: purple;
+  color: white;
+}
+
+.torquise p {
+  background-color: rgba(0, 255, 229, 0.223);
+  color: turquoise;
+}
+
+.torquise .dolar-symbol {
+  color: turquoise;
+}
+
+.torquise .angka-harga {
+  color: turquoise;
+}
+
+.torquise a input {
+  background-color: turquoise;
+  color: white;
+}
+
+.red p {
+  background-color: rgba(255, 0, 0, 0.277);
+  color: red;
+}
+
+.red .dolar-symbol {
+  color: red;
+}
+
+.red .angka-harga {
+  color: red;
+}
+
+.red a input {
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .table {
+    box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(224, 224, 224, 0.75);
+    width: 340px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: white;
+  }
+}

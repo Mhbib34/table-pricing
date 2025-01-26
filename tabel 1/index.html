@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+      }
+
+      .tabel-pricing {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        margin: 100px auto;
+      }
+
+      .tabel {
+        border-radius: 10px;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 10px 11px 5px 0px rgba(210, 210, 210, 0.75);
+        -webkit-box-shadow: 10px 11px 5px 0px rgba(210, 210, 210, 0.75);
+        -moz-box-shadow: 10px 11px 5px 0px rgba(210, 210, 210, 0.75);
+      }
+
+      .tabel ul {
+        list-style-type: none;
+      }
+
+      .tabel ul li {
+        margin: 5px;
+      }
+
+      .tabel header {
+        border-bottom: 5px solid green;
+        border-color: rgb(12, 3, 172);
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAAHpk4xqAAAAElBMVEX6+vrs7Ozr6+vu7u7v7+/t7e3EXgZMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHRJREFUKM/VzrERA0EQAsGdAfJPWRG8c55wuyi4xt3CDuCW9pCDnvOYl9HEq8bkMojcwHLYwpnUXjTrKZoLLd4a7KVtG0U9ZYWFkQM0aZd5mQoKyYFqNsAbbcMo7AKbykbuX5In4pv2TT618tTi6Uaf6HvrB6gQAgdgFALaAAAAAElFTkSuQmCC);
+      }
+
+      .dua header {
+        border-color: rgb(212, 255, 31);
+      }
+
+      .tiga header {
+        border-color: rgba(97, 53, 255, 1);
+      }
+
+      .empat header {
+        border-color: rgba(216, 0, 243, 1);
+      }
+
+      .tabel .monthly {
+        padding: 20px;
+      }
+
+      .monthly h2 {
+        font-size: 50px;
+      }
+
+      .satu h2 {
+        color: rgb(12, 3, 172);
+      }
+
+      .dua h2 {
+        color: rgb(212, 255, 31);
+      }
+
+      .tiga h2 {
+        color: rgba(97, 53, 255, 1);
+      }
+
+      .empat h2 {
+        color: rgb(216, 0, 243);
+      }
+      .tabel a input {
+        margin-top: 10px;
+        background: rgb(12, 3, 172);
+        background: linear-gradient(
+          90deg,
+          rgba(12, 3, 172, 1) 0%,
+          rgba(38, 105, 208, 1) 43%,
+          rgba(4, 184, 221, 1) 100%
+        );
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+        opacity: 0.5;
+      }
+
+      .dua a input {
+        background: rgb(212, 255, 31);
+        background: linear-gradient(
+          90deg,
+          rgba(212, 255, 31, 1) 0%,
+          rgba(136, 208, 38, 1) 43%,
+          rgba(0, 255, 33, 1) 100%
+        );
+      }
+
+      .tiga a input {
+        background: rgb(243, 0, 0);
+        background: linear-gradient(
+          90deg,
+          rgba(243, 0, 0, 1) 0%,
+          rgba(97, 53, 255, 1) 100%
+        );
+      }
+
+      .empat a input {
+        background: rgb(216, 0, 243);
+        background: linear-gradient(
+          90deg,
+          rgba(216, 0, 243, 1) 0%,
+          rgba(155, 141, 200, 1) 48%,
+          rgba(162, 255, 53, 1) 100%
+        );
+      }
+
+      .tabel a input:hover {
+        transition: all;
+        transition-duration: 400ms;
+        opacity: 1;
+      }
+
+      @media screen and (max-width: 800px) {
+        .tabel-pricing {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 100px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabel-pricing">
+      <div class="tabel satu">
+        <header>ENTERPRISE</header>
+        <div class="monthly">
+          <h2>$59</h2>
+          <div>PER MONTH</div>
+        </div>
+        <ul>
+          <li><b>10GB</b> Disk Space</li>
+          <li><b>100GB</b> Monthly Bandwidth</li>
+          <li><b>20</b> Email Account</li>
+          <li><b>Unlimited</b> Subdomains</li>
+        </ul>
+        <a href="https://www.google.co.id/?hl=id">
+          <input type="button" value="SIGN UP"
+        /></a>
+      </div>
+      <div class="tabel dua">
+        <header>PROFESIONAL</header>
+        <div class="monthly">
+          <h2>$29</h2>
+          <div>PER MONTH</div>
+        </div>
+        <ul>
+          <li><b>5GB</b> Disk Space</li>
+          <li><b>50GB</b> Monthly Bandwidth</li>
+          <li><b>10</b> Email Account</li>
+          <li><b>Unlimited</b> Subdomains</li>
+        </ul>
+        <a href="https://www.google.co.id/?hl=id">
+          <input type="button" value="SIGN UP"
+        /></a>
+      </div>
+      <div class="tabel tiga">
+        <header>STANDARD</header>
+        <div class="monthly">
+          <h2>$19</h2>
+          <div>PER MONTH</div>
+        </div>
+        <ul>
+          <li><b>3GB</b> Disk Space</li>
+          <li><b>25GB</b> Monthly Bandwidth</li>
+          <li><b>5</b> Email Account</li>
+          <li><b>Unlimited</b> Subdomains</li>
+        </ul>
+        <a href="https://www.google.co.id/?hl=id">
+          <input type="button" value="SIGN UP"
+        /></a>
+      </div>
+      <div class="tabel empat">
+        <header>BASIC</header>
+        <div class="monthly">
+          <h2>$9</h2>
+          <div>PER MONTH</div>
+        </div>
+        <ul>
+          <li><b>1GB</b> Disk Space</li>
+          <li><b>10GB</b> Monthly Bandwidth</li>
+          <li><b>2</b> Email Account</li>
+          <li><b>Unlimited</b> Subdomains</li>
+        </ul>
+        <a href="https://www.google.co.id/?hl=id">
+          <input type="button" value="SIGN UP"
+        /></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
